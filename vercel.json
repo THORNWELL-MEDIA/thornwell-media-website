@@ -1,0 +1,1990 @@
+{
+  "rewrites": [
+    {
+      "source": "/googleef0f3574bc5702a1.html",
+      "destination": "/googleef0f3574bc5702a1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/locations/ontario/toronto",
+      "destination": "/toronto-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/toronto",
+      "destination": "/toronto-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/mississauga",
+      "destination": "/mississauga-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/mississauga",
+      "destination": "/mississauga-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/brampton",
+      "destination": "/brampton-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/brampton",
+      "destination": "/brampton-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/hamilton",
+      "destination": "/hamilton-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/hamilton",
+      "destination": "/hamilton-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/ottawa",
+      "destination": "/ottawa-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ottawa",
+      "destination": "/ottawa-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/london",
+      "destination": "/london-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/london",
+      "destination": "/london-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/markham",
+      "destination": "/markham-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/markham",
+      "destination": "/markham-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/vaughan",
+      "destination": "/vaughan-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/vaughan",
+      "destination": "/vaughan-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/kitchener",
+      "destination": "/kitchener-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/kitchener",
+      "destination": "/kitchener-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/windsor",
+      "destination": "/windsor-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/windsor",
+      "destination": "/windsor-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/richmond-hill",
+      "destination": "/richmond-hill-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/richmond-hill",
+      "destination": "/richmond-hill-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/oakville",
+      "destination": "/oakville-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/oakville",
+      "destination": "/oakville-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/burlington",
+      "destination": "/burlington-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/burlington",
+      "destination": "/burlington-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/greater-sudbury",
+      "destination": "/greater-sudbury-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/greater-sudbury",
+      "destination": "/greater-sudbury-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/oshawa",
+      "destination": "/oshawa-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/oshawa",
+      "destination": "/oshawa-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/barrie",
+      "destination": "/barrie-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/barrie",
+      "destination": "/barrie-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/st-catharines",
+      "destination": "/st-catharines-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/st-catharines",
+      "destination": "/st-catharines-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/cambridge",
+      "destination": "/cambridge-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/cambridge",
+      "destination": "/cambridge-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/kingston",
+      "destination": "/kingston-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/kingston",
+      "destination": "/kingston-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/whitby",
+      "destination": "/whitby-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/whitby",
+      "destination": "/whitby-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/guelph",
+      "destination": "/guelph-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/guelph",
+      "destination": "/guelph-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/ajax",
+      "destination": "/ajax-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ajax",
+      "destination": "/ajax-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/thunder-bay",
+      "destination": "/thunder-bay-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/thunder-bay",
+      "destination": "/thunder-bay-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/waterloo",
+      "destination": "/waterloo-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/waterloo",
+      "destination": "/waterloo-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/brantford",
+      "destination": "/brantford-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/brantford",
+      "destination": "/brantford-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/pickering",
+      "destination": "/pickering-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/pickering",
+      "destination": "/pickering-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/niagara-falls",
+      "destination": "/niagara-falls-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/niagara-falls",
+      "destination": "/niagara-falls-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/milton",
+      "destination": "/milton-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/milton",
+      "destination": "/milton-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario/chatham-kent",
+      "destination": "/chatham-kent-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/chatham-kent",
+      "destination": "/chatham-kent-on-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/vancouver",
+      "destination": "/vancouver-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/vancouver",
+      "destination": "/vancouver-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/surrey",
+      "destination": "/surrey-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/surrey",
+      "destination": "/surrey-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/burnaby",
+      "destination": "/burnaby-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/burnaby",
+      "destination": "/burnaby-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/richmond",
+      "destination": "/richmond-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/richmond",
+      "destination": "/richmond-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/abbotsford",
+      "destination": "/abbotsford-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/abbotsford",
+      "destination": "/abbotsford-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/coquitlam",
+      "destination": "/coquitlam-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/coquitlam",
+      "destination": "/coquitlam-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/saanich",
+      "destination": "/saanich-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/saanich",
+      "destination": "/saanich-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/kelowna",
+      "destination": "/kelowna-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/kelowna",
+      "destination": "/kelowna-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/langley",
+      "destination": "/langley-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/langley",
+      "destination": "/langley-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/delta",
+      "destination": "/delta-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/delta",
+      "destination": "/delta-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/kamloops",
+      "destination": "/kamloops-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/kamloops",
+      "destination": "/kamloops-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/nanaimo",
+      "destination": "/nanaimo-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/nanaimo",
+      "destination": "/nanaimo-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/victoria",
+      "destination": "/victoria-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/victoria",
+      "destination": "/victoria-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/chilliwack",
+      "destination": "/chilliwack-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/chilliwack",
+      "destination": "/chilliwack-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/maple-ridge",
+      "destination": "/maple-ridge-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/maple-ridge",
+      "destination": "/maple-ridge-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/british-columbia/prince-george",
+      "destination": "/prince-george-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/prince-george",
+      "destination": "/prince-george-bc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/montreal",
+      "destination": "/montreal-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/montreal",
+      "destination": "/montreal-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/quebec-city",
+      "destination": "/quebec-city-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec-city",
+      "destination": "/quebec-city-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/laval",
+      "destination": "/laval-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/laval",
+      "destination": "/laval-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/gatineau",
+      "destination": "/gatineau-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/gatineau",
+      "destination": "/gatineau-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/longueuil",
+      "destination": "/longueuil-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/longueuil",
+      "destination": "/longueuil-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/sherbrooke",
+      "destination": "/sherbrooke-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/sherbrooke",
+      "destination": "/sherbrooke-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/saguenay",
+      "destination": "/saguenay-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/saguenay",
+      "destination": "/saguenay-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/levis",
+      "destination": "/levis-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/levis",
+      "destination": "/levis-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/trois-rivieres",
+      "destination": "/trois-rivieres-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/trois-rivieres",
+      "destination": "/trois-rivieres-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/quebec/terrebonne",
+      "destination": "/terrebonne-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/terrebonne",
+      "destination": "/terrebonne-qc-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/calgary",
+      "destination": "/calgary-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/calgary",
+      "destination": "/calgary-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/edmonton",
+      "destination": "/edmonton-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/edmonton",
+      "destination": "/edmonton-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/red-deer",
+      "destination": "/red-deer-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/red-deer",
+      "destination": "/red-deer-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/lethbridge",
+      "destination": "/lethbridge-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/lethbridge",
+      "destination": "/lethbridge-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/st--albert",
+      "destination": "/st--albert-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/st--albert",
+      "destination": "/st--albert-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/medicine-hat",
+      "destination": "/medicine-hat-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/medicine-hat",
+      "destination": "/medicine-hat-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/grande-prairie",
+      "destination": "/grande-prairie-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/grande-prairie",
+      "destination": "/grande-prairie-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/airdrie",
+      "destination": "/airdrie-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/airdrie",
+      "destination": "/airdrie-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alberta/spruce-grove",
+      "destination": "/spruce-grove-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/spruce-grove",
+      "destination": "/spruce-grove-ab-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/los-angeles",
+      "destination": "/los-angeles-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/los-angeles",
+      "destination": "/los-angeles-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/san-diego",
+      "destination": "/san-diego-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-diego",
+      "destination": "/san-diego-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/san-francisco",
+      "destination": "/san-francisco-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-francisco",
+      "destination": "/san-francisco-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/san-jose",
+      "destination": "/san-jose-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-jose",
+      "destination": "/san-jose-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/sacramento",
+      "destination": "/sacramento-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/sacramento",
+      "destination": "/sacramento-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/oakland",
+      "destination": "/oakland-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/oakland",
+      "destination": "/oakland-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/fresno",
+      "destination": "/fresno-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/fresno",
+      "destination": "/fresno-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/long-beach",
+      "destination": "/long-beach-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/long-beach",
+      "destination": "/long-beach-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/bakersfield",
+      "destination": "/bakersfield-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/bakersfield",
+      "destination": "/bakersfield-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/anaheim",
+      "destination": "/anaheim-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/anaheim",
+      "destination": "/anaheim-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/santa-ana",
+      "destination": "/santa-ana-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/santa-ana",
+      "destination": "/santa-ana-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/riverside",
+      "destination": "/riverside-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/riverside",
+      "destination": "/riverside-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/stockton",
+      "destination": "/stockton-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/stockton",
+      "destination": "/stockton-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/irvine",
+      "destination": "/irvine-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/irvine",
+      "destination": "/irvine-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/chula-vista",
+      "destination": "/chula-vista-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/chula-vista",
+      "destination": "/chula-vista-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/fremont",
+      "destination": "/fremont-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/fremont",
+      "destination": "/fremont-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/san-bernardino",
+      "destination": "/san-bernardino-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-bernardino",
+      "destination": "/san-bernardino-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/modesto",
+      "destination": "/modesto-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/modesto",
+      "destination": "/modesto-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/fontana",
+      "destination": "/fontana-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/fontana",
+      "destination": "/fontana-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/oxnard",
+      "destination": "/oxnard-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/oxnard",
+      "destination": "/oxnard-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/moreno-valley",
+      "destination": "/moreno-valley-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/moreno-valley",
+      "destination": "/moreno-valley-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/huntington-beach",
+      "destination": "/huntington-beach-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/huntington-beach",
+      "destination": "/huntington-beach-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/glendale",
+      "destination": "/glendale-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/glendale",
+      "destination": "/glendale-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/santa-clarita",
+      "destination": "/santa-clarita-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/santa-clarita",
+      "destination": "/santa-clarita-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/garden-grove",
+      "destination": "/garden-grove-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/garden-grove",
+      "destination": "/garden-grove-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/oceanside",
+      "destination": "/oceanside-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/oceanside",
+      "destination": "/oceanside-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/rancho-cucamonga",
+      "destination": "/rancho-cucamonga-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/rancho-cucamonga",
+      "destination": "/rancho-cucamonga-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/ontario",
+      "destination": "/ontario-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ontario",
+      "destination": "/ontario-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/santa-rosa",
+      "destination": "/santa-rosa-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/santa-rosa",
+      "destination": "/santa-rosa-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/elk-grove",
+      "destination": "/elk-grove-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/elk-grove",
+      "destination": "/elk-grove-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/corona",
+      "destination": "/corona-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/corona",
+      "destination": "/corona-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/hayward",
+      "destination": "/hayward-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/hayward",
+      "destination": "/hayward-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/salinas",
+      "destination": "/salinas-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/salinas",
+      "destination": "/salinas-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/palmdale",
+      "destination": "/palmdale-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/palmdale",
+      "destination": "/palmdale-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/pomona",
+      "destination": "/pomona-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/pomona",
+      "destination": "/pomona-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/escondido",
+      "destination": "/escondido-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/escondido",
+      "destination": "/escondido-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/torrance",
+      "destination": "/torrance-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/torrance",
+      "destination": "/torrance-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/sunnyvale",
+      "destination": "/sunnyvale-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/sunnyvale",
+      "destination": "/sunnyvale-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/orange",
+      "destination": "/orange-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/orange",
+      "destination": "/orange-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/pasadena",
+      "destination": "/pasadena-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/pasadena",
+      "destination": "/pasadena-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/fullerton",
+      "destination": "/fullerton-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/fullerton",
+      "destination": "/fullerton-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/thousand-oaks",
+      "destination": "/thousand-oaks-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/thousand-oaks",
+      "destination": "/thousand-oaks-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/visalia",
+      "destination": "/visalia-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/visalia",
+      "destination": "/visalia-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/simi-valley",
+      "destination": "/simi-valley-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/simi-valley",
+      "destination": "/simi-valley-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/concord",
+      "destination": "/concord-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/concord",
+      "destination": "/concord-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/roseville",
+      "destination": "/roseville-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/roseville",
+      "destination": "/roseville-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/victorville",
+      "destination": "/victorville-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/victorville",
+      "destination": "/victorville-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/santa-clara",
+      "destination": "/santa-clara-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/santa-clara",
+      "destination": "/santa-clara-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/vallejo",
+      "destination": "/vallejo-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/vallejo",
+      "destination": "/vallejo-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/berkeley",
+      "destination": "/berkeley-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/berkeley",
+      "destination": "/berkeley-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/el-monte",
+      "destination": "/el-monte-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/el-monte",
+      "destination": "/el-monte-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/downey",
+      "destination": "/downey-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/downey",
+      "destination": "/downey-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/costa-mesa",
+      "destination": "/costa-mesa-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/costa-mesa",
+      "destination": "/costa-mesa-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/carlsbad",
+      "destination": "/carlsbad-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/carlsbad",
+      "destination": "/carlsbad-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/temecula",
+      "destination": "/temecula-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/temecula",
+      "destination": "/temecula-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/inglewood",
+      "destination": "/inglewood-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/inglewood",
+      "destination": "/inglewood-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/ventura",
+      "destination": "/ventura-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ventura",
+      "destination": "/ventura-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/fairfield",
+      "destination": "/fairfield-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/fairfield",
+      "destination": "/fairfield-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/clovis",
+      "destination": "/clovis-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/clovis",
+      "destination": "/clovis-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/daly-city",
+      "destination": "/daly-city-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/daly-city",
+      "destination": "/daly-city-ca-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/houston",
+      "destination": "/houston-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/houston",
+      "destination": "/houston-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/dallas",
+      "destination": "/dallas-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/dallas",
+      "destination": "/dallas-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/austin",
+      "destination": "/austin-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/austin",
+      "destination": "/austin-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/san-antonio",
+      "destination": "/san-antonio-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-antonio",
+      "destination": "/san-antonio-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/fort-worth",
+      "destination": "/fort-worth-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/fort-worth",
+      "destination": "/fort-worth-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/el-paso",
+      "destination": "/el-paso-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/el-paso",
+      "destination": "/el-paso-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/arlington",
+      "destination": "/arlington-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/arlington",
+      "destination": "/arlington-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/corpus-christi",
+      "destination": "/corpus-christi-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/corpus-christi",
+      "destination": "/corpus-christi-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/plano",
+      "destination": "/plano-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/plano",
+      "destination": "/plano-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/lubbock",
+      "destination": "/lubbock-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/lubbock",
+      "destination": "/lubbock-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/laredo",
+      "destination": "/laredo-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/laredo",
+      "destination": "/laredo-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/irving",
+      "destination": "/irving-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/irving",
+      "destination": "/irving-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/garland",
+      "destination": "/garland-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/garland",
+      "destination": "/garland-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/frisco",
+      "destination": "/frisco-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/frisco",
+      "destination": "/frisco-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/mckinney",
+      "destination": "/mckinney-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/mckinney",
+      "destination": "/mckinney-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/amarillo",
+      "destination": "/amarillo-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/amarillo",
+      "destination": "/amarillo-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/grand-prairie",
+      "destination": "/grand-prairie-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/grand-prairie",
+      "destination": "/grand-prairie-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/brownsville",
+      "destination": "/brownsville-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/brownsville",
+      "destination": "/brownsville-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/killeen",
+      "destination": "/killeen-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/killeen",
+      "destination": "/killeen-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/mcallen",
+      "destination": "/mcallen-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/mcallen",
+      "destination": "/mcallen-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/denton",
+      "destination": "/denton-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/denton",
+      "destination": "/denton-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/waco",
+      "destination": "/waco-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/waco",
+      "destination": "/waco-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/midland",
+      "destination": "/midland-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/midland",
+      "destination": "/midland-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/carrollton",
+      "destination": "/carrollton-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/carrollton",
+      "destination": "/carrollton-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/round-rock",
+      "destination": "/round-rock-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/round-rock",
+      "destination": "/round-rock-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/pearland",
+      "destination": "/pearland-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/pearland",
+      "destination": "/pearland-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/richardson",
+      "destination": "/richardson-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/richardson",
+      "destination": "/richardson-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/college-station",
+      "destination": "/college-station-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/college-station",
+      "destination": "/college-station-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/league-city",
+      "destination": "/league-city-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/league-city",
+      "destination": "/league-city-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/sugar-land",
+      "destination": "/sugar-land-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/sugar-land",
+      "destination": "/sugar-land-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/conroe",
+      "destination": "/conroe-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/conroe",
+      "destination": "/conroe-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/new-braunfels",
+      "destination": "/new-braunfels-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-braunfels",
+      "destination": "/new-braunfels-tx-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/miami",
+      "destination": "/miami-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/miami",
+      "destination": "/miami-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/tampa",
+      "destination": "/tampa-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/tampa",
+      "destination": "/tampa-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/orlando",
+      "destination": "/orlando-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/orlando",
+      "destination": "/orlando-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/jacksonville",
+      "destination": "/jacksonville-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/jacksonville",
+      "destination": "/jacksonville-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/st--petersburg",
+      "destination": "/st--petersburg-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/st--petersburg",
+      "destination": "/st--petersburg-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/hialeah",
+      "destination": "/hialeah-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/hialeah",
+      "destination": "/hialeah-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/port-st--lucie",
+      "destination": "/port-st--lucie-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/port-st--lucie",
+      "destination": "/port-st--lucie-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/cape-coral",
+      "destination": "/cape-coral-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/cape-coral",
+      "destination": "/cape-coral-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/fort-lauderdale",
+      "destination": "/fort-lauderdale-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/fort-lauderdale",
+      "destination": "/fort-lauderdale-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/pembroke-pines",
+      "destination": "/pembroke-pines-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/pembroke-pines",
+      "destination": "/pembroke-pines-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/hollywood",
+      "destination": "/hollywood-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/hollywood",
+      "destination": "/hollywood-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/miramar",
+      "destination": "/miramar-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/miramar",
+      "destination": "/miramar-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/gainesville",
+      "destination": "/gainesville-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/gainesville",
+      "destination": "/gainesville-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/coral-springs",
+      "destination": "/coral-springs-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/coral-springs",
+      "destination": "/coral-springs-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/clearwater",
+      "destination": "/clearwater-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/clearwater",
+      "destination": "/clearwater-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/palm-bay",
+      "destination": "/palm-bay-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/palm-bay",
+      "destination": "/palm-bay-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/lakeland",
+      "destination": "/lakeland-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/lakeland",
+      "destination": "/lakeland-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/pompano-beach",
+      "destination": "/pompano-beach-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/pompano-beach",
+      "destination": "/pompano-beach-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/west-palm-beach",
+      "destination": "/west-palm-beach-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/west-palm-beach",
+      "destination": "/west-palm-beach-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/davie",
+      "destination": "/davie-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/davie",
+      "destination": "/davie-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/boca-raton",
+      "destination": "/boca-raton-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/boca-raton",
+      "destination": "/boca-raton-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/sunrise",
+      "destination": "/sunrise-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/sunrise",
+      "destination": "/sunrise-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/plantation",
+      "destination": "/plantation-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/plantation",
+      "destination": "/plantation-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/deltona",
+      "destination": "/deltona-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/deltona",
+      "destination": "/deltona-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/largo",
+      "destination": "/largo-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/largo",
+      "destination": "/largo-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/melbourne",
+      "destination": "/melbourne-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/melbourne",
+      "destination": "/melbourne-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/homestead",
+      "destination": "/homestead-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/homestead",
+      "destination": "/homestead-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/kissimmee",
+      "destination": "/kissimmee-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/kissimmee",
+      "destination": "/kissimmee-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida/delray-beach",
+      "destination": "/delray-beach-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/delray-beach",
+      "destination": "/delray-beach-fl-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/new-york",
+      "destination": "/new-york-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york",
+      "destination": "/new-york-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/buffalo",
+      "destination": "/buffalo-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/buffalo",
+      "destination": "/buffalo-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/rochester",
+      "destination": "/rochester-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/rochester",
+      "destination": "/rochester-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/yonkers",
+      "destination": "/yonkers-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/yonkers",
+      "destination": "/yonkers-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/syracuse",
+      "destination": "/syracuse-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/syracuse",
+      "destination": "/syracuse-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/albany",
+      "destination": "/albany-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/albany",
+      "destination": "/albany-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/new-rochelle",
+      "destination": "/new-rochelle-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-rochelle",
+      "destination": "/new-rochelle-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/mount-vernon",
+      "destination": "/mount-vernon-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/mount-vernon",
+      "destination": "/mount-vernon-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/schenectady",
+      "destination": "/schenectady-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/schenectady",
+      "destination": "/schenectady-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/utica",
+      "destination": "/utica-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/utica",
+      "destination": "/utica-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/white-plains",
+      "destination": "/white-plains-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/white-plains",
+      "destination": "/white-plains-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/hempstead",
+      "destination": "/hempstead-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/hempstead",
+      "destination": "/hempstead-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york/troy",
+      "destination": "/troy-ny-marketing-agency",
+      "permanent": true
+    },
+    {
+      "source": "/locations/troy",
+      "destination": "/troy-ny-marketing-agency",
+      "permanent": true
+    }
+  ]
+}
