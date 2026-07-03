@@ -345,6 +345,42 @@ function ArticleView({ article }: { article: ReturnType<typeof getArticleBySlug>
   );
 }
 
+/** Parse inline markdown links [label](href) into React nodes. */
+function renderInline(text: string): React.ReactNode[] {
+  const re = /\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]*)\)/g;
+  const nodes: React.ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    const [full, label, href] = m;
+    nodes.push(
+      href.startsWith("http") ? (
+        <a
+          key={m.index}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-navy-900 underline underline-offset-2 hover:text-saffron-700"
+        >
+          {label}
+        </a>
+      ) : (
+        <Link
+          key={m.index}
+          href={href}
+          className="font-medium text-navy-900 underline underline-offset-2 hover:text-saffron-700"
+        >
+          {label}
+        </Link>
+      ),
+    );
+    last = m.index + full.length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
 function renderMarkdownBody(body: string) {
   // Split on H2s while keeping the heading lines
   const parts = body.split(/(?=^##\s)/m);
@@ -365,7 +401,7 @@ function renderMarkdownBody(body: string) {
         paragraphs.forEach((p, j) => {
           out.push(
             <p key={`p-${i}-${j}`} className="mt-5 text-[17px] leading-[1.85] text-navy-800">
-              {p}
+              {renderInline(p)}
             </p>,
           );
         });
@@ -375,7 +411,7 @@ function renderMarkdownBody(body: string) {
       paragraphs.forEach((p, j) => {
         out.push(
           <p key={`pp-${i}-${j}`} className="mt-5 text-[17px] leading-[1.85] text-navy-800">
-            {p}
+            {renderInline(p)}
           </p>,
         );
       });
