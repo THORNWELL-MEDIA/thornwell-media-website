@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { trackLead } from "@/components/Analytics";
 
 type Status = "idle" | "submitting" | "submitted";
 
@@ -33,16 +34,30 @@ const TIMELINES = [
 
 export default function ContactForm({ progressive = false }: { progressive?: boolean }) {
   const [status, setStatus] = useState<Status>("idle");
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setError(null);
     setStatus("submitting");
     const form = new FormData(event.currentTarget);
     const payload = Object.fromEntries(form.entries());
-    // No backend wired up yet. Replace with fetch("/api/contact", ...) once endpoint exists.
-    // eslint-disable-next-line no-console
-    console.log("[ContactForm] submission payload (no backend wired)", payload);
-    setStatus("submitted");
+    try {
+      const res = await fetch("https://rothenbury-contact-api.vercel.app/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ brand: "thornwell", ...payload }),
+      });
+      if (!res.ok) {
+        const j = await res.json().catch(() => ({}));
+        throw new Error(j.error || "Something went wrong. Please try again.");
+      }
+      trackLead("contact_form");
+      setStatus("submitted");
+    } catch (err) {
+      setStatus("idle");
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    }
   };
 
   if (status === "submitted") {
@@ -140,6 +155,11 @@ export default function ContactForm({ progressive = false }: { progressive?: boo
           <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </button>
       </div>
+      {error && (
+        <p role="alert" className="text-sm font-medium text-red-600">
+          {error}
+        </p>
+      )}
     </form>
   );
 }

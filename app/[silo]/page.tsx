@@ -121,6 +121,10 @@ function buildSchema(page: SiloPage) {
     graph.push({
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["summary", "details > p"],
+      },
       mainEntity: page.faq.map((f) => ({
         "@type": "Question",
         name: f.q,
@@ -128,6 +132,16 @@ function buildSchema(page: SiloPage) {
       })),
     });
   }
+
+  graph.push({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE.url}#thornwell-lead`,
+    name: "Pending real name from Thornwell team while the Team CMS is built",
+    jobTitle: "Engagement Lead",
+    worksFor: { "@type": "Organization", name: BRAND.name, url: SITE.url },
+    url: SITE.url,
+  });
 
   return graph;
 }

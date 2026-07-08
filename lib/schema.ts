@@ -2,13 +2,44 @@ import { BRAND, NAP, SITE, SOCIAL } from "./constants";
 import type { City } from "./cities";
 import type { Service } from "./services";
 
+// Portfolio parent: Rothenbury Group. Thornwell is the independent agency subsidiary.
+const PARENT_ORG = {
+  "@type": "Organization",
+  "@id": "https://rothenbury.com/#organization",
+  name: "Rothenbury Group",
+  url: "https://rothenbury.com",
+};
+
+// Canonical San Jose office per master NAP 2026-05-15.
+const THORNWELL_ADDRESS = {
+  "@type": "PostalAddress",
+  streetAddress: "2150 N. 1st Street, 4th Floor",
+  addressLocality: "San Jose",
+  addressRegion: "CA",
+  postalCode: "95131",
+  addressCountry: "US",
+};
+
 export const organizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE.url}/#organization`,
   name: BRAND.name,
   legalName: BRAND.legalName,
   url: SITE.url,
+  logo: `${SITE.url}/og-default.png`,
   description: BRAND.positioning,
+  address: THORNWELL_ADDRESS,
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: NAP.phone.e164,
+      contactType: "customer service",
+      availableLanguage: ["en"],
+      areaServed: ["US", "CA"],
+    },
+  ],
+  parentOrganization: PARENT_ORG,
   sameAs: Object.values(SOCIAL),
 });
 

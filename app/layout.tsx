@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
 import StickyMobileCTA from "@/components/ui/StickyMobileCTA";
+import Analytics from "@/components/Analytics";
 import { BRAND, SITE } from "@/lib/constants";
 import {
   organizationSchema,
@@ -43,9 +43,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const h = await headers();
-  const isPreview = (h.get("host") || "").endsWith(".vercel.app");
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const isPreview = process.env.VERCEL_ENV === "preview";
   return (
     <html lang="en-CA">
       <head>
@@ -102,6 +101,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main id="main">{children}</main>
         <Footer />
         <StickyMobileCTA />
+        <Analytics />
       </body>
     </html>
   );
