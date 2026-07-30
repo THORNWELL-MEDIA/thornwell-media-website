@@ -5,20 +5,24 @@ import { ArrowUpRight, FileText, KeyRound, Briefcase, Wrench, Users, PenLine } f
 import { BRAND, CTAS, NAP } from "@/lib/constants";
 import CTASection from "@/components/CTASection";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
-import JobBoard from "./JobBoard";
 import Container from "@/components/ui/Container";
 import SectionLabel from "@/components/ui/SectionLabel";
 import Reveal from "@/components/ui/Reveal";
 import { breadcrumbSchema } from "@/lib/schema";
 import { IMG, unsplashUrl } from "@/lib/imagery";
+import { fetchRolesFromApi } from "@/lib/data/careers";
+
+import { CareersFilterProvider } from "./careers-filter-context";
+import JobFilterControls from "./job-filter-controls";
+import JobFilterList from "./job-filter-list";
 
 export const metadata: Metadata = {
   title: "Careers, Operate with Us",
-  description: `${BRAND.name} hires marketing operators, search engineers, and account leads. See open positions and apply.`,
+  description: `${BRAND.name} hires marketing operators, search engineers, and account leads. See live positions and apply.`,
   alternates: { canonical: "/careers/" },
 };
 
-const ROLES = [
+const ROLES_CATEGORIES = [
   {
     icon: Briefcase,
     title: "Operators",
@@ -43,9 +47,12 @@ const ROLES = [
   },
 ];
 
-export default function CareersPage() {
+export default async function CareersPage() {
+  const allRoles = await fetchRolesFromApi();
+  const totalRoles = allRoles.length;
+
   return (
-    <>
+    <CareersFilterProvider allRoles={allRoles}>
       <SchemaJsonLd
         data={breadcrumbSchema([
           { name: "Home", url: "/" },
@@ -72,15 +79,14 @@ export default function CareersPage() {
               Operate with us.
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper/90">
-              {BRAND.name} hires operators, people who run programs, document the
-              work, and report honestly. If that is the standard you want to operate
-              to, we are accepting applications on a rolling basis.
+              {BRAND.name} hires operators—people who run programs, document the
+              work, and report honestly. Live postings are updated automatically.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/positions/" className="btn-primary-on-dark group">
-                <span>See open positions</span>
+              <a href="#positions" className="btn-primary-on-dark group">
+                <span>View open positions ({totalRoles})</span>
                 <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-              </Link>
+              </a>
               <Link href={CTAS.primary.href} className="btn-ghost-on-dark">
                 {CTAS.primary.label}
               </Link>
@@ -90,7 +96,7 @@ export default function CareersPage() {
       </section>
 
       {/* WHO WE HIRE */}
-      <section className="bg-paper">
+      <section className="bg-paper border-b border-paper-edge">
         <Container>
           <div className="grid gap-12 py-20 md:grid-cols-12 md:py-28">
             <Reveal className="md:col-span-5">
@@ -105,7 +111,7 @@ export default function CareersPage() {
             </Reveal>
 
             <div className="md:col-span-7 grid gap-5 sm:grid-cols-2">
-              {ROLES.map((r, i) => (
+              {ROLES_CATEGORIES.map((r, i) => (
                 <Reveal key={r.title} delay={i * 0.06}>
                   <article className="card h-full p-6">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-navy-900 text-paper">
@@ -123,12 +129,33 @@ export default function CareersPage() {
         </Container>
       </section>
 
+      {/* LIVE OPEN POSITIONS SECTION */}
+      <section id="positions" className="bg-paper py-20 md:py-28 scroll-mt-20">
+        <Container>
+          <div className="max-w-3xl mb-10">
+            <SectionLabel number="03" label="Open Positions" />
+            <h2 className="mt-6 font-serif text-display-md font-semibold text-navy-900 balance">
+              {totalRoles} {totalRoles === 1 ? "role" : "roles"} open right now.
+            </h2>
+            <p className="mt-3 text-navy-700">
+              Filtered by country, region, and city. Click a role to read the full job description and apply.
+            </p>
+          </div>
+
+          <div className="mb-10">
+            <JobFilterControls scrollToId="positions" />
+          </div>
+
+          <JobFilterList />
+        </Container>
+      </section>
+
       {/* HOW TO APPLY */}
       <section className="border-t border-paper-edge bg-white/40">
         <Container>
           <div className="py-20 md:py-28">
             <div className="max-w-3xl">
-              <SectionLabel number="03" label="How to apply" />
+              <SectionLabel number="04" label="How to apply" />
               <h2 className="mt-6 font-serif text-display-md font-semibold text-navy-900 balance">
                 Three steps. No theatre.
               </h2>
@@ -141,11 +168,11 @@ export default function CareersPage() {
                   title: "Review open positions",
                   body: (
                     <>
-                      Browse current roles on the{" "}
-                      <Link href="/positions/" className="text-navy-900 underline">
+                      Browse current live roles on the{" "}
+                      <a href="#positions" className="text-navy-900 underline font-medium">
                         positions index
-                      </Link>
-                      . Open spec applications are welcomed.
+                      </a>
+                      . Open spec applications are also welcomed.
                     </>
                   ),
                   icon: FileText,
@@ -155,15 +182,14 @@ export default function CareersPage() {
                   title: "Send a working brief",
                   body: (
                     <>
-                      Email{" "}
+                      Click any position to review full details and apply online, or email{" "}
                       <a
                         href={`mailto:${NAP.email.careers}`}
-                        className="text-navy-900 underline"
+                        className="text-navy-900 underline font-medium"
                       >
                         {NAP.email.careers}
                       </a>{" "}
-                      with resume, role of interest, and a short note on a program you
-                      have shipped.
+                      with your resume.
                     </>
                   ),
                   icon: KeyRound,
@@ -182,7 +208,7 @@ export default function CareersPage() {
               ].map((step) => (
                 <li key={step.no} className="card flex h-full flex-col p-7">
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-[12px] tracking-[0.18em] text-gold-600">
+                    <span className="font-mono text-[12px] tracking-[0.18em] text-gold-600 font-semibold">
                       {step.no}
                     </span>
                     <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-paper-deep/40 text-navy-900">
@@ -200,14 +226,12 @@ export default function CareersPage() {
         </Container>
       </section>
 
-      <JobBoard />
-
       <CTASection
         eyebrow="Careers"
-        number="04"
+        number="05"
         title="Apply to operate with us."
-        description={`Send your brief to ${NAP.email.careers}. We respond to every application that engages with the work.`}
+        description={`Send your brief or application. We respond to every candidate that engages with the work.`}
       />
-    </>
+    </CareersFilterProvider>
   );
 }

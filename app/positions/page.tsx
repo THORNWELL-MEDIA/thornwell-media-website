@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { BRAND, NAP } from "@/lib/constants";
 import CTASection from "@/components/CTASection";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
@@ -9,6 +9,10 @@ import Container from "@/components/ui/Container";
 import SectionLabel from "@/components/ui/SectionLabel";
 import { breadcrumbSchema } from "@/lib/schema";
 import { IMG, unsplashUrl } from "@/lib/imagery";
+import { fetchRolesFromApi } from "@/lib/data/careers";
+import { CareersFilterProvider } from "../careers/careers-filter-context";
+import JobFilterControls from "../careers/job-filter-controls";
+import JobFilterList from "../careers/job-filter-list";
 
 export const metadata: Metadata = {
   title: "Open Positions",
@@ -16,30 +20,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/positions/" },
 };
 
-const OPEN_ROLES = [
-  {
-    slug: "senior-marketing-operator",
-    title: "Senior Marketing Operator",
-    short:
-      "Lead end-to-end marketing programs for one or more portfolio brands. Document, ship, and report.",
-    type: "Full-time",
-    location: "Remote",
-    status: "Accepting applications",
-  },
-  {
-    slug: "search-listings-specialist",
-    title: "Search & Listings Specialist",
-    short:
-      "Run technical SEO, local SEO, and listings infrastructure across a portfolio of multi-entity brands.",
-    type: "Full-time",
-    location: "Remote",
-    status: "Accepting applications",
-  },
-];
+export default async function PositionsPage() {
+  const roles = await fetchRolesFromApi();
+  const totalRoles = roles.length;
 
-export default function PositionsPage() {
   return (
-    <>
+    <CareersFilterProvider allRoles={roles}>
       <SchemaJsonLd
         data={[
           breadcrumbSchema([
@@ -50,11 +36,11 @@ export default function PositionsPage() {
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            itemListElement: OPEN_ROLES.map((role, idx) => ({
+            itemListElement: roles.map((role, idx) => ({
               "@type": "ListItem",
               position: idx + 1,
               name: role.title,
-              url: `/positions/`,
+              url: `/careers/${role.slug}/`,
             })),
           },
         ]}
@@ -86,8 +72,8 @@ export default function PositionsPage() {
               Roles that ship programs.
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-paper/90">
-              {BRAND.name} hires on a rolling basis. Live openings are listed below.
-              Open spec applications are also welcomed. See the{" "}
+              {BRAND.name} hires on a rolling basis. {totalRoles} live {totalRoles === 1 ? "opening is" : "openings are"} listed below.
+              See the main{" "}
               <Link
                 href="/careers/"
                 className="border-b border-gold-400/60 text-paper hover:border-gold-400"
@@ -100,58 +86,22 @@ export default function PositionsPage() {
         </Container>
       </section>
 
-      {/* ROLES */}
-      <section className="bg-paper">
+      {/* ROLES LIST */}
+      <section id="positions" className="bg-paper py-20 md:py-28 scroll-mt-20">
         <Container>
-          <div className="py-20 md:py-28">
-            <div className="overflow-hidden rounded-2xl border border-paper-edge bg-white">
-              {OPEN_ROLES.map((role, i) => (
-                <div
-                  key={role.slug}
-                  className="grid items-center gap-6 border-t border-paper-edge px-8 py-8 first:border-t-0 md:grid-cols-12"
-                >
-                  <div className="md:col-span-7">
-                    <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.18em] text-navy-700">
-                      <span>{String(i + 1).padStart(2, "0")}</span>
-                      <span className="h-px w-6 bg-paper-edge" />
-                      <span>
-                        {role.type} · {role.location}
-                      </span>
-                    </div>
-                    <h2 className="mt-3 font-serif text-2xl font-semibold text-navy-900 md:text-3xl">
-                      {role.title}
-                    </h2>
-                    <p className="mt-3 text-[15px] leading-7 text-navy-700">
-                      {role.short}
-                    </p>
-                  </div>
-                  <div className="md:col-span-3">
-                    <span className="inline-flex items-center rounded-full border border-emerald-700/30 bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-900">
-                      <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-emerald-700" />
-                      {role.status}
-                    </span>
-                  </div>
-                  <div className="md:col-span-2 md:text-right">
-                    <a
-                      href={`mailto:${NAP.email.careers}?subject=${encodeURIComponent(role.title)}`}
-                      className="btn-primary group"
-                    >
-                      <span>Apply</span>
-                      <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="mb-10">
+            <JobFilterControls scrollToId="positions" />
+          </div>
 
-            <div className="mt-10 rounded-2xl border border-paper-edge bg-white/60 p-6 text-sm text-navy-700">
-              <span className="font-semibold text-navy-900">
-                A note on the role descriptions:
-              </span>{" "}
-              Final compensation, equity treatment, and reporting line are confirmed
-              in the application response. We hire on the work and document the offer
-              on signed terms before a start date is set.
-            </div>
+          <JobFilterList />
+
+          <div className="mt-12 rounded-2xl border border-paper-edge bg-white/60 p-6 text-sm text-navy-700">
+            <span className="font-semibold text-navy-900">
+              A note on role descriptions:
+            </span>{" "}
+            Final compensation, equity treatment, and reporting lines are confirmed
+            in the application response. We hire on the work and document the offer
+            on signed terms before a start date is set.
           </div>
         </Container>
       </section>
@@ -162,6 +112,6 @@ export default function PositionsPage() {
         title="Don't see a role that fits?"
         description={`Send a working brief to ${NAP.email.careers}. We hire when the right operator surfaces.`}
       />
-    </>
+    </CareersFilterProvider>
   );
 }

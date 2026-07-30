@@ -10,14 +10,13 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    overflow-x: clip;
   }
   body {
     @apply bg-paper text-graphite font-sans;
     font-feature-settings: "ss01", "cv11", "cv02";
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
   }
-  html { overflow-x: hidden; }
   /* Prevent iOS zoom on form fields */
   @media (max-width: 768px) {
     input, select, textarea { font-size: 16px !important; }
