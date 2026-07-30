@@ -46,7 +46,7 @@ export default async function PositionsPage() {
         ]}
       />
 
-      {/* HERO */}
+      {/* HEROO */}
       <section className="on-dark relative overflow-hidden bg-ink text-paper">
         <Image
           src={unsplashUrl(IMG.workMeeting.id, 2400, 78)}
