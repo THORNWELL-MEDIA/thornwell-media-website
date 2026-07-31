@@ -321,6 +321,7 @@ export default async function CareerRolePage({ params }: RouteParams) {
                   role={role.title}
                   jobId={role.jobId}
                   jobOpeningId={role.jobOpeningId}
+                  locId={role.locId}
                   workType={role.workType}
                   jobType={role.jobType}
                 />
