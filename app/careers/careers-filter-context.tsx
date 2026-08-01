@@ -1,7 +1,7 @@
 'use client'
 
 import React, { createContext, useContext, useState, useMemo, useEffect, ReactNode } from 'react'
-import { Role, groupRolesByCountry } from '@/lib/data/careers'
+import { Role, fetchRolesFromApi, groupRolesByCountry } from '@/lib/data/careers'
 
 type LocationHierarchyItem = {
   country: string
@@ -51,6 +51,7 @@ interface CareersFilterContextType {
 const CareersFilterContext = createContext<CareersFilterContextType | null>(null)
 
 export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]; children: ReactNode }) {
+  const [roles, setRoles] = useState<Role[]>(allRoles)
   const [search, setSearch] = useState('')
 
   const [selectedCountries, setSelectedCountries] = useState<string[]>([])
@@ -62,6 +63,16 @@ export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 20
 
+  useEffect(() => {
+    fetchRolesFromApi()
+      .then((liveRoles) => {
+        if (liveRoles && liveRoles.length > 0) {
+          setRoles(liveRoles)
+        }
+      })
+      .catch((err) => console.error('Failed to fetch live roles on client:', err))
+  }, [])
+
   // Reset pagination when filters change
   useEffect(() => {
     setCurrentPage(1)
@@ -70,7 +81,7 @@ export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]
   const locationHierarchy = useMemo(() => {
     const countries: Record<string, { count: number; cities: Record<string, number> }> = {}
 
-    allRoles.forEach((r) => {
+    roles.forEach((r) => {
       const c = r?.country || 'Remote'
       const city = r?.city || 'Remote'
       if (c) {
@@ -91,7 +102,7 @@ export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]
           .sort((a, b) => a.city.localeCompare(b.city)),
       }))
       .sort((a, b) => a.country.localeCompare(b.country))
-  }, [allRoles])
+  }, [roles])
 
   const getCategories = (r: Role): string[] => {
     if (Array.isArray(r?.category)) return r.category.filter(Boolean)
@@ -102,7 +113,7 @@ export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]
 
   const categoriesWithCounts = useMemo(() => {
     const counts: Record<string, number> = {}
-    allRoles.forEach((r) => {
+    roles.forEach((r) => {
       const cats = getCategories(r)
       cats.forEach((cat) => {
         counts[cat] = (counts[cat] || 0) + 1
@@ -111,10 +122,10 @@ export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]
     return Object.entries(counts)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => a.name.localeCompare(b.name))
-  }, [allRoles])
+  }, [roles])
 
   const filteredRoles = useMemo(() => {
-    return allRoles.filter((role) => {
+    return roles.filter((role) => {
       const searchLower = search.toLowerCase()
       const matchesSearch =
         !search ||
@@ -138,7 +149,7 @@ export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]
 
       return matchesSearch && matchesLocation && matchesCategory
     })
-  }, [allRoles, search, selectedCountries, selectedCities, selectedCategories])
+  }, [roles, search, selectedCountries, selectedCities, selectedCategories])
 
   const sortedFilteredRoles = useMemo(() => {
     return [...filteredRoles].sort((a, b) => {
