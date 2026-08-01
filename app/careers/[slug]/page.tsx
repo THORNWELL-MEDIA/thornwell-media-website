@@ -230,22 +230,34 @@ export default async function CareerRolePage({ params }: RouteParams) {
                 <>
                   <style dangerouslySetInnerHTML={{
                     __html: `
+                      .job-desc {
+                        color: #0F1E3D;
+                      }
+                      .job-desc p {
+                        margin-top: 1.15rem !important;
+                        margin-bottom: 1.15rem !important;
+                        line-height: 1.8 !important;
+                        font-size: 15px !important;
+                      }
+                      .job-desc div {
+                        margin-top: 0.85rem !important;
+                        margin-bottom: 0.85rem !important;
+                        line-height: 1.8 !important;
+                      }
                       .job-desc h1,
                       .job-desc h2,
                       .job-desc h3,
                       .job-desc h4 {
                         display: block;
-                        font-family: Newsreader, Georgia, serif;
-                        font-size: 1.25rem;
-                        font-weight: 800;
-                        color: #0A1530;
-                        margin-top: 2.25rem;
-                        margin-bottom: 0.75rem;
-                        text-transform: uppercase;
-                        letter-spacing: 0.05em;
-                        border-bottom: 2px solid #C9A96E;
-                        padding-bottom: 0.25rem;
-                        width: fit-content;
+                        font-size: 1.2rem !important;
+                        font-weight: 800 !important;
+                        color: #0A1530 !important;
+                        margin-top: 2.25rem !important;
+                        margin-bottom: 0.85rem !important;
+                        letter-spacing: 0.015em;
+                        border-left: 4px solid #C9A96E;
+                        padding-left: 0.75rem !important;
+                        line-height: 1.4 !important;
                       }
                       .job-desc p strong,
                       .job-desc p b,
@@ -268,25 +280,25 @@ export default async function CareerRolePage({ params }: RouteParams) {
                       .job-desc ul {
                         list-style-type: none !important;
                         padding-left: 0 !important;
-                        margin-top: 0.75rem;
-                        margin-bottom: 1.5rem;
+                        margin-top: 1rem !important;
+                        margin-bottom: 1.75rem !important;
                       }
                       .job-desc ul > li {
                         position: relative;
-                        padding-left: 1.25rem !important;
-                        margin-top: 0.5rem;
-                        margin-bottom: 0.5rem;
+                        padding-left: 1.35rem !important;
+                        margin-top: 0.6rem !important;
+                        margin-bottom: 0.6rem !important;
+                        line-height: 1.75 !important;
                         color: #0F1E3D;
                         font-size: 15px;
-                        line-height: 1.7;
                       }
                       .job-desc ul > li::before {
                         content: "";
                         position: absolute;
                         left: 0;
                         top: 0.65rem;
-                        width: 0.375rem;
-                        height: 0.375rem;
+                        width: 0.4rem;
+                        height: 0.4rem;
                         border-radius: 9999px;
                         background-color: #C9A96E;
                       }
