@@ -16,8 +16,6 @@ import { CareersFilterProvider } from "./careers-filter-context";
 import JobFilterControls from "./job-filter-controls";
 import JobFilterList from "./job-filter-list";
 
-export const dynamic = "force-dynamic";
-
 export const metadata: Metadata = {
   title: "Careers, Operate with Us",
   description: `${BRAND.name} hires marketing operators, search engineers, and account leads. See live positions and apply.`,
