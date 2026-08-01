@@ -1,10 +1,9 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
-import { MapPin, Globe2, Briefcase, ArrowRight, ChevronLeft, ChevronRight, Search, X } from 'lucide-react'
+import { MapPin, Globe2, Briefcase, ArrowRight, ChevronLeft, ChevronRight, Search } from 'lucide-react'
 import { useCareersFilter } from './careers-filter-context'
-import { Role } from '@/lib/data/careers'
 
 export default function JobFilterList() {
   const {
@@ -14,8 +13,6 @@ export default function JobFilterList() {
     setCurrentPage,
     totalPages,
   } = useCareersFilter()
-
-  const [selectedRole, setSelectedRole] = useState<Role | null>(null)
 
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage)
@@ -30,16 +27,6 @@ export default function JobFilterList() {
 
   return (
     <div>
-      {/* Live Dynamic Role Header */}
-      <div className="mb-6 pb-4 border-b border-paper-edge flex flex-wrap items-center justify-between gap-4">
-        <h3 className="font-serif text-2xl font-semibold text-navy-900">
-          {filteredRoles.length} {filteredRoles.length === 1 ? 'role' : 'roles'} open right now.
-        </h3>
-        <span className="text-xs uppercase font-mono tracking-wider text-navy-600">
-          Live Postings
-        </span>
-      </div>
-
       {/* Jobs List */}
       <div className="space-y-12">
         {jobsByCountry.length > 0 ? (
@@ -77,10 +64,9 @@ export default function JobFilterList() {
                           <ul className="space-y-3">
                             {cityGroup.roles.map((role) => (
                               <li key={role.slug}>
-                                <button
-                                  type="button"
-                                  onClick={() => setSelectedRole(role)}
-                                  className="w-full text-left group flex flex-col gap-3 rounded-xl border border-paper-edge bg-paper/60 p-4 transition-all hover:-translate-y-0.5 hover:border-gold-500/50 hover:bg-white hover:shadow-md md:flex-row md:items-center md:justify-between md:gap-6 md:p-5"
+                                <Link
+                                  href={`/careers/${role.slug}/`}
+                                  className="group flex flex-col gap-3 rounded-xl border border-paper-edge bg-paper/60 p-4 transition-all hover:-translate-y-0.5 hover:border-gold-500/50 hover:bg-white hover:shadow-md md:flex-row md:items-center md:justify-between md:gap-6 md:p-5 no-underline"
                                 >
                                   <div className="min-w-0 flex-1">
                                     <h6 className="font-serif text-lg font-semibold text-navy-900 group-hover:text-gold-600 transition-colors">
@@ -101,7 +87,7 @@ export default function JobFilterList() {
                                     View role
                                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
                                   </span>
-                                </button>
+                                </Link>
                               </li>
                             ))}
                           </ul>
@@ -181,99 +167,6 @@ export default function JobFilterList() {
                   <ChevronRight className="h-5 w-5" aria-hidden="true" />
                 </button>
               </nav>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* JOB DETAIL MODAL */}
-      {selectedRole && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 sm:p-6 overflow-y-auto">
-          <div className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl border border-paper-edge bg-paper p-6 shadow-2xl sm:p-10">
-            {/* Close button */}
-            <button
-              type="button"
-              onClick={() => setSelectedRole(null)}
-              className="absolute right-5 top-5 inline-flex h-9 w-9 items-center justify-center rounded-full bg-navy-900/10 text-navy-900 hover:bg-navy-900/20 transition-colors"
-            >
-              <X className="h-5 w-5" />
-            </button>
-
-            {/* Header */}
-            <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-gold-600">
-                {selectedRole.department || 'Career Role'}
-              </span>
-              <h2 className="mt-2 font-serif text-3xl font-bold text-navy-900 sm:text-4xl">
-                {selectedRole.title}
-              </h2>
-              <div className="mt-3 flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-wider text-navy-600">
-                <span className="inline-flex items-center gap-1.5">
-                  <Briefcase className="h-4 w-4 text-gold-600" />
-                  {selectedRole.type}
-                </span>
-                <span className="inline-flex items-center gap-1.5">
-                  <MapPin className="h-4 w-4 text-gold-600" />
-                  {selectedRole.locationDisplay}
-                </span>
-                {selectedRole.compensation && (
-                  <span className="text-navy-900 font-bold">
-                    {selectedRole.compensation}
-                  </span>
-                )}
-              </div>
-            </div>
-
-            {/* Description Body */}
-            <div className="mt-8 border-t border-paper-edge pt-6">
-              <style jsx global>{`
-                .job-desc h1, .job-desc h2, .job-desc h3, .job-desc h4 {
-                  font-family: var(--font-serif), Georgia, serif !important;
-                  font-weight: 700 !important;
-                  color: #0A1628 !important;
-                  margin-top: 1.75rem !important;
-                  margin-bottom: 0.75rem !important;
-                  font-size: 1.25rem !important;
-                  border-left: 4px solid #C9A96E !important;
-                  padding-left: 0.75rem !important;
-                }
-                .job-desc ul {
-                  list-style-type: disc !important;
-                  padding-left: 1.5rem !important;
-                  margin-top: 0.5rem !important;
-                  margin-bottom: 1rem !important;
-                }
-                .job-desc li {
-                  margin-bottom: 0.4rem !important;
-                }
-                .job-desc p {
-                  margin-bottom: 1rem !important;
-                  line-height: 1.7 !important;
-                }
-              `}</style>
-              <div
-                className="job-desc text-navy-800 text-sm sm:text-base leading-relaxed"
-                dangerouslySetInnerHTML={{
-                  __html: selectedRole.htmlDescription || selectedRole.summary || '<p>No description provided.</p>',
-                }}
-              />
-            </div>
-
-            {/* Modal Actions */}
-            <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-paper-edge pt-6">
-              <a
-                href={`mailto:careers@thornwellmedia.com?subject=Application for ${encodeURIComponent(selectedRole.title)} (${encodeURIComponent(selectedRole.locationDisplay)})`}
-                className="inline-flex items-center gap-2 rounded-xl bg-navy-900 px-6 py-3 font-semibold text-paper hover:bg-navy-800 transition-colors text-sm"
-              >
-                Apply for this position <ArrowRight className="h-4 w-4" />
-              </a>
-
-              <Link
-                href={`/careers/${selectedRole.slug}/`}
-                className="text-xs font-semibold text-navy-700 underline hover:text-navy-900"
-              >
-                Open dedicated permalink page
-              </Link>
             </div>
           </div>
         </div>
