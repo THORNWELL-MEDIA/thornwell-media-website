@@ -66,7 +66,7 @@ export function CareersFilterProvider({ allRoles, children }: { allRoles: Role[]
   useEffect(() => {
     fetchRolesFromApi()
       .then((liveRoles) => {
-        if (liveRoles && liveRoles.length > 0) {
+        if (Array.isArray(liveRoles) && liveRoles.length > 0) {
           setRoles(liveRoles)
         }
       })

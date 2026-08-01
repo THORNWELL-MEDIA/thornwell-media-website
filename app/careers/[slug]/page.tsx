@@ -14,6 +14,9 @@ interface RouteParams {
   params: Promise<{ slug: string }>
 }
 
+export const dynamicParams = true;
+export const revalidate = 0;
+
 export async function generateStaticParams() {
   const slugs = await getAllRoleSlugs()
   return slugs.map((slug) => ({ slug }))

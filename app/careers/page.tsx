@@ -15,6 +15,7 @@ import { fetchRolesFromApi } from "@/lib/data/careers";
 import { CareersFilterProvider } from "./careers-filter-context";
 import JobFilterControls from "./job-filter-controls";
 import JobFilterList from "./job-filter-list";
+import { LivePositionsHeader, LiveHeroCount } from "./live-positions-header";
 
 export const metadata: Metadata = {
   title: "Careers, Operate with Us",
@@ -84,7 +85,7 @@ export default async function CareersPage() {
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a href="#positions" className="btn-primary-on-dark group">
-                <span>View open positions ({totalRoles})</span>
+                <LiveHeroCount initialCount={totalRoles} />
                 <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </a>
               <Link href={CTAS.primary.href} className="btn-ghost-on-dark">
@@ -134,9 +135,7 @@ export default async function CareersPage() {
         <Container>
           <div className="max-w-3xl mb-10">
             <SectionLabel number="03" label="Open Positions" />
-            <h2 className="mt-6 font-serif text-display-md font-semibold text-navy-900 balance">
-              {totalRoles} {totalRoles === 1 ? "role" : "roles"} open right now.
-            </h2>
+            <LivePositionsHeader initialCount={totalRoles} />
             <p className="mt-3 text-navy-700">
               Filtered by country, region, and city. Click a role to read the full job description and apply.
             </p>
