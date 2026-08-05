@@ -17,6 +17,7 @@ interface Props {
   className?: string
   variant?: 'primary' | 'ghost'
   label?: string
+  isSticky?: boolean
 }
 
 export function ApplyButton({
@@ -29,6 +30,7 @@ export function ApplyButton({
   className = '',
   variant = 'primary',
   label = 'Apply Now',
+  isSticky = false,
 }: Props) {
   const [open, setOpen] = useState(false)
 
@@ -46,6 +48,7 @@ export function ApplyButton({
         type="button"
         onClick={() => setOpen(true)}
         data-apply-trigger
+        {...(isSticky ? { 'data-sticky-trigger': true } : {})}
         className={`${triggerBase} ${triggerVariant} ${className} group`}
       >
         <span>{label}</span>
@@ -740,5 +743,55 @@ function ApplyModal({
       </div>
     </>,
     document.body
+  )
+}
+
+export function StickyApplyButton(props: Props) {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const triggers = Array.from(document.querySelectorAll('[data-apply-trigger]')).filter(
+      (el) => !el.hasAttribute('data-sticky-trigger')
+    )
+
+    if (triggers.length === 0) {
+      setIsVisible(true)
+      return
+    }
+
+    const visibilityMap = new Map<Element, boolean>()
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let changed = false
+        entries.forEach((entry) => {
+          visibilityMap.set(entry.target, entry.isIntersecting)
+          changed = true
+        })
+
+        if (changed) {
+          const isAnyVisible = Array.from(visibilityMap.values()).some(Boolean)
+          setIsVisible(!isAnyVisible)
+        }
+      },
+      { threshold: 0, rootMargin: '50px' }
+    )
+
+    triggers.forEach((t) => {
+      visibilityMap.set(t, false)
+      observer.observe(t)
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <div
+      className={`fixed bottom-0 left-0 right-0 z-40 border-t border-paper-edge bg-paper p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] shadow-[0_-4px_12px_rgba(0,0,0,0.08)] lg:hidden transition-transform duration-300 ease-in-out ${
+        isVisible ? 'translate-y-0' : 'translate-y-[150%]'
+      }`}
+    >
+      <ApplyButton {...props} isSticky className="w-full shadow-sm" />
+    </div>
   )
 }

@@ -8,7 +8,7 @@ import Container from '@/components/ui/Container'
 import { breadcrumbSchema } from '@/lib/schema'
 import { BRAND, SITE } from '@/lib/constants'
 import { getAllRoleSlugs, getRoleBySlug, type Role } from '@/lib/data/careers'
-import { ApplyButton } from './apply-button'
+import { ApplyButton, StickyApplyButton } from './apply-button'
 
 interface RouteParams {
   params: Promise<{ slug: string }>
@@ -352,6 +352,16 @@ export default async function CareerRolePage({ params }: RouteParams) {
           </div>
         </Container>
       </section>
+
+      {/* Mobile Sticky Apply Button */}
+      <StickyApplyButton
+        role={role.title}
+        jobId={role.jobId}
+        jobOpeningId={role.jobOpeningId}
+        locId={role.locId}
+        workType={role.workType}
+        jobType={role.jobType}
+      />
     </main>
   )
 }
