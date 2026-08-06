@@ -34,16 +34,18 @@ export default function NAPBlock({ variant = "footer", showHours = false }: Prop
             {NAP.phone.display}
           </a>
         </div>
-        <div>
-          <a
-            href={`mailto:${NAP.email.general}`}
-            className={
-              isCard ? "text-navy-800 underline-offset-2 hover:underline" : "text-white underline-offset-2 hover:underline"
-            }
-          >
-            {NAP.email.general}
-          </a>
-        </div>
+        {NAP.email.general && (
+          <div>
+            <a
+              href={`mailto:${NAP.email.general}`}
+              className={
+                isCard ? "text-navy-800 underline-offset-2 hover:underline" : "text-white underline-offset-2 hover:underline"
+              }
+            >
+              {NAP.email.general}
+            </a>
+          </div>
+        )}
       </div>
       {showHours && (
         <div className="mt-4 border-t border-slate-200 pt-3 text-xs">

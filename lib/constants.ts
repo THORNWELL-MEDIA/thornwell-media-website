@@ -13,23 +13,23 @@ export const BRAND = {
 export const NAP = {
   name: "Thornwell Media",
   address: {
-    line1: "",
-    line2: "",
-    city: "",
-    region: "",
-    postalCode: "",
+    line1: "1 King Street West",
+    line2: "Suite 4802",
+    city: "Toronto",
+    region: "Ontario",
+    postalCode: "M5H 1A1",
     country: "Canada",
     countryCode: "CA",
   },
   phone: {
-    display: "1-866-444-3931",
+    display: "+1 (866) 444-3931",
     e164: "+18664443931",
     href: "tel:+18664443931",
   },
   email: {
-    general: "hello@thornwellmedia.com",
+    general: "",
     careers: "careers@thornwellmedia.com",
-    press: "press@thornwellmedia.com",
+    press: "",
   },
   hours: [
     { day: "Monday", open: "9:00 AM", close: "6:00 PM" },
