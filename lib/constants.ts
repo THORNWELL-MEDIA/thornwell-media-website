@@ -13,13 +13,13 @@ export const BRAND = {
 export const NAP = {
   name: "Thornwell Media",
   address: {
-    line1: "2150 N. 1st Street",
-    line2: "4th Floor",
-    city: "San Jose",
-    region: "CA",
-    postalCode: "95131",
-    country: "United States",
-    countryCode: "US",
+    line1: "1 King Street West",
+    line2: "Suite 4802",
+    city: "Toronto",
+    region: "Ontario",
+    postalCode: "M5H 1A1",
+    country: "Canada",
+    countryCode: "CA",
   },
   phone: {
     display: "+1 (866) 444-3931",
@@ -27,9 +27,9 @@ export const NAP = {
     href: "tel:+18664443931",
   },
   email: {
-    general: "hello@thornwellmedia.com",
+    general: "",
     careers: "careers@thornwellmedia.com",
-    press: "press@thornwellmedia.com",
+    press: "",
   },
   hours: [
     { day: "Monday", open: "9:00 AM", close: "6:00 PM" },

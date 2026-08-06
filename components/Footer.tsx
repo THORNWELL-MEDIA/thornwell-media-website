@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 import { BRAND, NAP, SOCIAL, CTAS } from "@/lib/constants";
 import Container from "@/components/ui/Container";
 import Mark from "@/components/ui/Mark";
@@ -92,15 +92,6 @@ export default function Footer() {
             </p>
 
             <ul className="mt-8 space-y-3 text-sm text-paper/85">
-              <li className="flex items-center gap-3">
-                <Mail className="h-4 w-4 flex-none text-gold-400" />
-                <a
-                  href={`mailto:${NAP.email.general}`}
-                  className="text-paper hover:underline"
-                >
-                  {NAP.email.general}
-                </a>
-              </li>
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 flex-none text-gold-400" />
                 <span className="leading-relaxed">

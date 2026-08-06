@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
-import { ChevronDown, Mail, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { NAP, CTAS, BRAND } from "@/lib/constants";
 import { INDUSTRIES } from "@/lib/industries";
 import { RESOURCES } from "@/lib/resources";
@@ -38,6 +38,7 @@ const RESOURCES_DROPDOWN: DropdownColumn = {
   label: "Working resources",
   items: [
     { href: "/resources/blog/", label: "Blog", description: "Notes from the operator desk." },
+    { href: "/careers/", label: "Careers", description: "Open positions and career opportunities." },
     ...RESOURCES.map((r) => ({
       href: `/resources/${r.slug}/`,
       label: r.name,
@@ -126,14 +127,6 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <a
-              href={`mailto:${NAP.email.general}`}
-              className="hidden items-center gap-2 rounded-full border border-navy-900/15 px-4 py-2 text-xs font-medium text-navy-900 no-underline transition hover:border-navy-900/40 lg:inline-flex"
-              aria-label={`Email ${BRAND.name}`}
-            >
-              <Mail className="h-3.5 w-3.5 text-gold-600" />
-              <span>{NAP.email.general}</span>
-            </a>
             <Link href={CTAS.primary.href} className="btn-primary hidden md:inline-flex">
               {CTAS.primary.label}
             </Link>
@@ -240,13 +233,6 @@ export default function Header() {
               </div>
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-paper-edge pt-4">
-              <a
-                href={`mailto:${NAP.email.general}`}
-                className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-navy-900 no-underline"
-              >
-                <Mail className="h-4 w-4 text-gold-600" />
-                {NAP.email.general}
-              </a>
               <Link
                 href={CTAS.primary.href}
                 className="btn-primary w-full"

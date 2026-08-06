@@ -98,28 +98,10 @@ export default function ContactPage() {
                     <li className="flex items-center gap-3">
                       <Mail className="h-4 w-4 flex-none text-gold-400" />
                       <a
-                        href={`mailto:${NAP.email.general}`}
-                        className="text-paper hover:underline"
-                      >
-                        {NAP.email.general}
-                      </a>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <Mail className="h-4 w-4 flex-none text-gold-400" />
-                      <a
                         href={`mailto:${NAP.email.careers}`}
                         className="text-paper hover:underline"
                       >
                         {NAP.email.careers}
-                      </a>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <Mail className="h-4 w-4 flex-none text-gold-400" />
-                      <a
-                        href={`mailto:${NAP.email.press}`}
-                        className="text-paper hover:underline"
-                      >
-                        {NAP.email.press}
                       </a>
                     </li>
                   </ul>

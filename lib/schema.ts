@@ -10,14 +10,14 @@ const PARENT_ORG = {
   url: "https://rothenbury.com",
 };
 
-// Canonical San Jose office per master NAP 2026-05-15.
+// Canonical Toronto office per master NAP.
 const THORNWELL_ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "2150 N. 1st Street, 4th Floor",
-  addressLocality: "San Jose",
-  addressRegion: "CA",
-  postalCode: "95131",
-  addressCountry: "US",
+  streetAddress: "1 King Street West, Suite 4802",
+  addressLocality: "Toronto",
+  addressRegion: "Ontario",
+  postalCode: "M5H 1A1",
+  addressCountry: "CA",
 };
 
 export const organizationSchema = () => ({
