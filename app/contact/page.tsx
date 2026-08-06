@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock, Phone } from "lucide-react";
 import { BRAND, NAP } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
 import SchemaJsonLd from "@/components/SchemaJsonLd";
@@ -81,10 +81,19 @@ export default function ContactPage() {
                     <li className="flex items-start gap-3">
                       <MapPin className="mt-0.5 h-4 w-4 flex-none text-gold-400" />
                       <span className="leading-relaxed">
-                        Operator floor
+                        {NAP.address.line1}, {NAP.address.line2}
                         <br />
-                        {NAP.address.country}
+                        {NAP.address.city}, {NAP.address.region} {NAP.address.postalCode}
                       </span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <Phone className="h-4 w-4 flex-none text-gold-400" />
+                      <a
+                        href={NAP.phone.href}
+                        className="text-paper hover:underline"
+                      >
+                        {NAP.phone.display}
+                      </a>
                     </li>
                     <li className="flex items-center gap-3">
                       <Mail className="h-4 w-4 flex-none text-gold-400" />

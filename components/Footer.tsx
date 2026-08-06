@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { BRAND, NAP, SOCIAL, CTAS } from "@/lib/constants";
 import Container from "@/components/ui/Container";
 import Mark from "@/components/ui/Mark";
@@ -104,8 +104,17 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 flex-none text-gold-400" />
                 <span className="leading-relaxed">
-                  Operator floor, {NAP.address.country}
+                  {NAP.address.line1}, {NAP.address.line2}, {NAP.address.city}, {NAP.address.region} {NAP.address.postalCode}
                 </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-4 w-4 flex-none text-gold-400" />
+                <a
+                  href={NAP.phone.href}
+                  className="text-paper hover:underline"
+                >
+                  {NAP.phone.display}
+                </a>
               </li>
             </ul>
 
