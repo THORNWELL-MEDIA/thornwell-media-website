@@ -8,9 +8,45 @@ interface Props {
   onClose: () => void;
 }
 
+function getSpecialPortfolioConfig(role: string) {
+  if (!role) return null;
+  const r = role.toLowerCase().replace(/\s+/g, " ").trim();
+
+  const isSocialMediaManager =
+    r === "group social media & content manager" ||
+    r === "group social media and content manager" ||
+    (r.includes("group social media") && r.includes("content manager"));
+
+  if (isSocialMediaManager) {
+    return {
+      label: "Portfolio or Work-Sample Link",
+      helperText:
+        "Provide an accessible link to content you personally created, brands or accounts you managed, and examples of different brand styles. Ensure no login or access request is required.",
+      placeholder: "https://...",
+    };
+  }
+
+  const isSeoManager =
+    r === "senior seo manager" ||
+    r.includes("senior seo manager");
+
+  if (isSeoManager) {
+    return {
+      label: "SEO Portfolio or Case Study Link",
+      helperText:
+        "Provide an accessible link showing websites or brands whose SEO you personally managed, your exact contribution, relevant content samples, and measurable SEO or online-reputation results. Ensure no login or access request is required.",
+      placeholder: "https://...",
+    };
+  }
+
+  return null;
+}
+
 export default function CareersApplyModal({ role, onClose }: Props) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+
+  const specialPortfolio = getSpecialPortfolioConfig(role);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -27,6 +63,25 @@ export default function CareersApplyModal({ role, onClose }: Props) {
     setStatus("loading");
     setErrorMsg("");
     const fd = new FormData(e.currentTarget);
+
+    let portfolioLink = ((fd.get("portfolio_link") as string) || "").trim();
+    if (specialPortfolio) {
+      if (!portfolioLink) {
+        setErrorMsg("Portfolio link is required.");
+        setStatus("error");
+        return;
+      }
+      if (!/^https?:\/\//i.test(portfolioLink)) {
+        portfolioLink = "https://" + portfolioLink;
+      }
+      const isValidUrl = /^https?:\/\/([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/.*)?$/i.test(portfolioLink);
+      if (!isValidUrl) {
+        setErrorMsg("Please enter a valid URL for your portfolio.");
+        setStatus("error");
+        return;
+      }
+    }
+
     const payload = {
       role,
       firstName: fd.get("firstName"),
@@ -35,6 +90,7 @@ export default function CareersApplyModal({ role, onClose }: Props) {
       phone: fd.get("phone"),
       linkedin: fd.get("linkedin"),
       resumeUrl: fd.get("resumeUrl"),
+      portfolio_link: portfolioLink || undefined,
       whyYou: fd.get("whyYou"),
       referral: fd.get("referral"),
     };
@@ -116,6 +172,25 @@ export default function CareersApplyModal({ role, onClose }: Props) {
               <label className="block text-xs font-semibold text-graphite mb-1.5">Resume / Portfolio URL</label>
               <input name="resumeUrl" type="url" className="w-full border border-paper-edge bg-paper px-3 py-2.5 text-sm text-navy-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500" placeholder="https://drive.google.com/..." />
             </div>
+
+            {specialPortfolio && (
+              <div>
+                <label className="block text-xs font-semibold text-graphite mb-1.5">
+                  {specialPortfolio.label} <span className="text-red-500">*</span>
+                </label>
+                <p className="text-xs text-graphite/70 mb-1.5 leading-relaxed">
+                  {specialPortfolio.helperText}
+                </p>
+                <input
+                  name="portfolio_link"
+                  type="url"
+                  required
+                  className="w-full border border-paper-edge bg-paper px-3 py-2.5 text-sm text-navy-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500"
+                  placeholder={specialPortfolio.placeholder}
+                />
+              </div>
+            )}
+
             <div>
               <label className="block text-xs font-semibold text-graphite mb-1.5">Why do you want this role? <span className="text-graphite/50 font-normal">(optional)</span></label>
               <textarea name="whyYou" rows={3} className="w-full border border-paper-edge bg-paper px-3 py-2.5 text-sm text-navy-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-500 resize-none" placeholder="What draws you to this position..." />
