@@ -187,12 +187,22 @@ export async function fetchRolesFromApi(): Promise<Role[]> {
         compensation = `${compensation}`
       }
 
-      // Work_Type contains "Full-Time", "Part-Time", "Contract"
-      // Job_Type contains "Remote", "Hybrid", "On-site"
       const workTypeRaw = job.Work_Type ? String(job.Work_Type).trim() : ''
       const jobTypeRaw = job.Job_Type ? String(job.Job_Type).trim() : ''
+      const workTypeLower = workTypeRaw.toLowerCase()
+      const jobTypeLower = jobTypeRaw.toLowerCase()
 
-      const employmentTypeDisplay = workTypeRaw || 'Full-Time'
+      let employmentTypeDisplay = workTypeRaw || 'Full-Time'
+      if (jobTypeRaw) {
+        if (workTypeRaw) {
+          if (!workTypeLower.includes(jobTypeLower)) {
+            employmentTypeDisplay = `${workTypeRaw} · ${jobTypeRaw}`
+          }
+        } else {
+          employmentTypeDisplay = jobTypeRaw
+        }
+      }
+
       const workArrangementDisplay = jobTypeRaw
 
       const locParts = []
@@ -201,8 +211,8 @@ export async function fetchRolesFromApi(): Promise<Role[]> {
       if (job.Country) locParts.push(job.Country)
 
       const locationDisplay = locParts.length > 0
-        ? (workArrangementDisplay ? `${locParts.join(', ')} · ${workArrangementDisplay}` : locParts.join(', '))
-        : (workArrangementDisplay || 'Remote')
+        ? locParts.join(', ')
+        : (jobTypeRaw || 'Remote')
 
       const industryVal = job.Industry || 'Careers'
       const departmentDisplay = Array.isArray(industryVal) && industryVal.length > 0 ? industryVal.join(', ') : (typeof industryVal === 'string' ? industryVal : 'Careers')
